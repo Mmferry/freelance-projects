@@ -1,0 +1,27 @@
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 980px) 
+{
+	header{
+		height: auto;
+	}
+	.header-profile .logo{
+		text-align: center;
+	}
+	.header-profile .header-search{
+		margin-top: 15px;
+	}
+	.header-profile .header-controls{
+		text-align: center;
+    	width: 100%;
+	}
+	.profile .new-post .btn{
+		width: 100px;
+	}
+	.profile .profile-memories .profile-memories--img{
+		height: auto;
+	}
+	.profile .profile-info{
+		margin-bottom: 30px;
+	}
+}

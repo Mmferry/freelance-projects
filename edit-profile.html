@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- if arabic theme -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-arabic.min.css"> -->
+    <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
+    <title>Memories</title>
+  </head>
+  <body>
+    <header class="header header-profile">
+      <div class="container-fluid">
+        <div class="col-md-2 col-sm-3 col-xs-12">
+          <h1 class="logo">Memories</h1>
+        </div>
+
+        <div class="col-md-4 col-sm-7 col-xs-12">
+          <div class="header-search">
+            <button class="fa fa-search icon-btn"></button>
+            <input type="text" name="search" placeholder="search by name" />
+            <div class="select">
+              <select>
+                <option>followers</option>
+                <option>followers</option>
+                <option>followers</option>
+              </select>
+            </div>
+          </div><!-- /.header-search -->
+        </div>
+
+        <div class="col-md-6 col-sm-2 col-xs-12">
+          <ul class="list-inline header-controls pull-right">
+            <li><a href="#" aria-label="my profile"><i class="fa fa-user"></i></a></li>
+            <li><a href="#" aria-label="my profile"><i class="fa fa-cog"></i></a></li>
+            <li>
+              <div class="dropdown">
+                <a id="dLabel" data-target="#" href="#" aria-label="my profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bell"></i>
+                </a>
+
+                <ul class="dropdown-menu list-notification" aria-labelledby="dLabel">
+                  <li>
+                      <a href="#">
+                          ارسل لك مجهول ذكرى
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          ارسل لك محمد  ذكرى
+                      </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="profile-img">
+      <img src="assets/images/orignal.jpg" alt="" class="img-circle" />
+      <h1>Ahmed Ali</h1>
+      <span>(@ahmed ali)</span>
+    </div>
+
+    <div class="wrapper profile landing-page">
+      <div class="container">
+
+        <div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+          <div class="profile-info">
+            <div class="profile-info--activity">
+              <div>
+                <button data-toggle="modal" data-target="#showMemo" aria-label="show list of memories" class="icon-btn fa fa-commenting"></button>
+                <span>400 memo</span>
+              </div>
+              <div>
+                <button data-toggle="modal" data-target="#showAllLikes" aria-label="show list of likes" class="icon-btn fa fa-thumbs-o-up"></button>
+                <span>300 likes</span>
+              </div>
+              <div>
+                <button data-toggle="modal" data-target="#showFollowers" aria-label="show list of followers" class="icon-btn fa fa-users"></button>
+                <span>100 followers</span>
+              </div>
+            </div>
+            <div class="profile-info--personal">
+              <h2>About ahmed ali</h2>
+              <p class="bio">Easy come easy go</p>
+              <a href="#" class="fb-account"><i class="fa fa-link"></i> fb.com/ahmed.ali</a>
+              <p class="location"><i class="fa fa-marker"></i> egypt, cairo</p>
+              <button class="btn btn-default btn-edit"><i class="fa fa-pencil"></i>edit profile</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-7 col-xs-12">
+
+          <div class="profile-memories">
+            <form action="#" method="POST">
+              <input type="text" name="username" placeholder="user name" />
+              <input type="text" name="nickname" placeholder="nickname" />
+              <input type="text" name="location" placeholder="location" />
+              <textarea placeholder="Bio"></textarea>
+              <input type="text" name="facebook" placeholder="facebook profile" />
+              <input type="text" name="twitter" placeholder="twitter profile" />
+              <input type="password" name="password" placeholder="password" />
+              <input type="password" name="confirmPassword" placeholder="confirm password" />
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div><!-- /.profile-memories -->
+
+        </div>
+
+        <div class="col-md-4 col-sm-5 hidden-xs">
+          <div class="profile-info">
+            <div class="profile-info--activity">
+              <div>
+                <button data-toggle="modal" data-target="#showMemo" aria-label="show list of memories" class="icon-btn fa fa-commenting"></button>
+                <span>400 memo</span>
+              </div>
+              <div>
+                <button data-toggle="modal" data-target="#showAllLikes" aria-label="show list of likes" class="icon-btn fa fa-thumbs-o-up"></button>
+                <span>300 likes</span>
+              </div>
+              <div>
+                <button data-toggle="modal" data-target="#showFollowers" aria-label="show list of followers" class="icon-btn fa fa-users"></button>
+                <span>100 followers</span>
+              </div>
+            </div>
+            <div class="profile-info--personal">
+              <h2>About ahmed ali</h2>
+              <p class="bio">Easy come easy go</p>
+              <a href="#" class="fb-account"><i class="fa fa-link"></i> fb.com/ahmed.ali</a>
+              <p class="location"><i class="fa fa-marker"></i> egypt, cairo</p>
+              <button class="btn btn-default btn-edit"><i class="fa fa-pencil"></i>edit profile</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.container -->
+
+
+      <!-- Modal Start -->
+      <div class="modal fade list-likes" id="showMemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Memories</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled">
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohaed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Modal End -->
+        
+      <!-- Modal Start -->
+      <div class="modal fade list-likes" id="showAllLikes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Likes</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled">
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohaed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <!-- Modal Start -->
+      <div class="modal fade list-likes" id="showFollowers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Followers</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="list-unstyled">
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohaed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+                <li><a href="#"><img src="" alt="" class="img-circle"></a><a href="#">mohamed fared </a></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+
+      <div class="footer">
+        <p class="rights">copy rights @ memories</p>
+      </div>
+    </div><!-- /.wrapper -->
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- if arabic theme -->
+  <!-- <script src="assets/js/bootstrap-arabic.min.js"></script> -->
+  </body>
+</html>

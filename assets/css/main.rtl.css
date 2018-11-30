@@ -1,0 +1,124 @@
+/* 29 of 312 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.checkbox [type=checkbox]:checked, .checkbox [type=checkbox]:not(:checked){
+    right: 24px;
+    left: auto;
+}
+
+.checkbox [type=checkbox]:checked + label, .checkbox [type=checkbox]:not(:checked) + label{
+    padding-right: 28px;
+    padding-left: 0;
+}
+
+.checkbox [type=checkbox]:checked + label:before, .checkbox [type=checkbox]:not(:checked) + label:before{
+    right: 0;
+    left: auto;
+}
+
+.checkbox [type=checkbox]:checked + label:after, .checkbox [type=checkbox]:not(:checked) + label:after{
+    right: 3px;
+    left: auto;
+}
+
+.checkbox label{
+    padding-left: 35px;
+    padding-right: 0;
+}
+
+.select:after{
+    left: 0px;
+    right: auto;
+}
+
+header .lang{
+    left: 30px;
+    right: auto;
+}
+
+.landing-page input, .landing-page textarea{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.landing-page .checkbox{
+    float: right;
+}
+
+.landing-page .form-link{
+    float: left;
+}
+
+.header-profile .logo{
+    text-align: right;
+}
+
+.header-profile .header-search{
+    padding-right: 0.8rem;
+    padding-left: 0;
+}
+
+.header-profile .header-search .select{
+    left: -1px;
+    right: auto;
+}
+
+.header-profile .header-search .select select{
+    border-top-left-radius: 10px;
+    border-top-right-radius: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: none;
+}
+
+.header-profile .header-controls .open > .dropdown-menu{
+    left: 0;
+    right: auto;
+}
+
+.header-profile .header-controls .open > .dropdown-menu a{
+    text-align: right;
+}
+
+.profile-img:before{
+    left: 0;
+    right: 0;
+}
+
+.profile .new-post .post .upload-img{
+    left: 2rem;
+    right: auto;
+}
+
+.profile .profile-memories .share-memorey .likes{
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.profile .profile-memories .share-memorey .share a{
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+.profile .profile-info--personal .btn-edit i{
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.profile .profile-info--personal .fb-account i{
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.list-likes img{
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.list-notification li img{
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
